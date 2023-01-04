@@ -17,6 +17,25 @@ public class ArrayDequeDemo {
 		System.out.println(dq.pollFirst());
 		System.out.println(dq.pollLast());
 
+// Iteration of Elements 
+
+		dq.add("Ketan");
+        dq.addFirst("Shinde");
+        dq.addLast("Rohit");
+        dq.add("FLash");
+		System.out.println(dq); 
+
+		System.out.println("Iteration in Ascending order");
+
+		for (Iterator itr = dq.iterator(); itr.hasNext();) {
+			System.out.println(itr.next() + "");
+		}
+
+		System.out.println("Iteration in Descending order");
+
+		for (Iterator itr = dq.descendingIterator(); itr.hasNext();) {
+			System.out.println(itr.next() + "");
+		}
 	}
 }
 
@@ -28,5 +47,17 @@ Naruto
 Jojo
 Minato
 null
+[Shinde, Ketan, Rohit, FLash]
+Iteration in Ascending order
+Shinde
+Ketan
+Rohit
+FLash
+Iteration in Descending order
+FLash
+Rohit
+Ketan
+Shinde
+
 
 */
