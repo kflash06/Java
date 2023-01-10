@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Months number");
+        System.out.println("Enter the Months number ");
         int n = sc.nextInt();
         String month;
         switch (n) {
@@ -47,6 +47,6 @@ public class Main {
                 month = "There are 12 months in a calendar year, choose between 1 - 12";
                 break;
         }
-        System.out.println(month);
+        System.out.println("There are " + DaysInMonth.getDaysInMonth(n, 2021) + " days in " + month);
     }
 }
